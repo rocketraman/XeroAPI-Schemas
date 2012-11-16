@@ -16,7 +16,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
 
-      <xs:element minOccurs="1" maxOccurs="1" name="PaymentID" type="uniqueIdentifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="PaymentID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="Amount" type="xs:decimal" />
       <xs:element minOccurs="0" maxOccurs="1" name="Account" type="Account" />
