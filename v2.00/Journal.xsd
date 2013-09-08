@@ -4,6 +4,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
   <xs:include schemaLocation="BaseTypes.xsd" />
+  <xs:include schemaLocation="Tracking.xsd" />
   
   <xs:element name="Journals" nillable="true" type="ArrayOfJournal" />
 
