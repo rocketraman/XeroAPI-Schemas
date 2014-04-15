@@ -5,12 +5,14 @@
 >
 
   <!-- API Exception -->
-  <xs:complexType name="ApiException">
-    <xs:all>
-      <xs:element name="ErrorNumber" type="xs:integer" minOccurs="1" maxOccurs="1" />
-      <xs:element name="Type" type="xs:string" minOccurs="1" maxOccurs="1" />
-      <xs:element name="Message" type="xs:string" minOccurs="1" maxOccurs="1" />
-    </xs:all>
-  </xs:complexType>
-  
+  <xs:element name="ApiException">
+    <xs:complexType>
+      <xs:all>
+        <xs:element name="ErrorNumber" type="xs:integer" minOccurs="1" maxOccurs="1" />
+        <xs:element name="Type" type="xs:string" minOccurs="1" maxOccurs="1" />
+        <xs:element name="Message" type="xs:string" minOccurs="1" maxOccurs="1" />
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+
 </xs:schema>
