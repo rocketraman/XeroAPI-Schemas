@@ -48,7 +48,7 @@
 
       <xs:element minOccurs="1" maxOccurs="1" name="JournalLineID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="AccountID" type="uniqueIdentifier" />
-      <xs:element minOccurs="1" maxOccurs="1" name="AccountCode" type="accountCode" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AccountCode" type="accountCode" />
       <xs:element minOccurs="1" maxOccurs="1" name="AccountType" type="accountType" />
       <xs:element minOccurs="1" maxOccurs="1" name="AccountName" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="Description" type="xs:string" />
