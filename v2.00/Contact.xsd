@@ -5,6 +5,7 @@
 >
   <xs:include schemaLocation="BaseTypes.xsd" />
   <xs:include schemaLocation="Address.xsd" />
+  <xs:include schemaLocation="BrandingTheme.xsd" />
   <xs:include schemaLocation="Phone.xsd" />
   <xs:include schemaLocation="CurrencyCode.xsd" />
 
@@ -39,9 +40,11 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ContactGroups" type="ArrayOfContactGroup" />
       <xs:element minOccurs="0" maxOccurs="1" name="IsSupplier" nillable="false" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="IsCustomer" nillable="false" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BrandingTheme" nillable="false" type="BrandingTheme" />
       <xs:element minOccurs="0" maxOccurs="1" name="DefaultCurrency" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="Balances" type="Balances" />
       <xs:element minOccurs="0" maxOccurs="1" name="Website" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContactPersons" nillable="false" type="ArrayOfContactPerson" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" nillable="false" type="xs:boolean" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
@@ -63,6 +66,21 @@
   <xs:complexType name="ContactGroup">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ArrayOfContactPerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactPerson" nillable="true" type="ContactPerson" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ContactPerson">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="FirstName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LastName" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IncludeInEmails" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
 

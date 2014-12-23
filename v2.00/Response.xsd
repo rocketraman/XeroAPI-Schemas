@@ -29,7 +29,7 @@
   <xs:include schemaLocation="Receipt.xsd" />
   <xs:include schemaLocation="ExpenseClaim.xsd" />
   <xs:include schemaLocation="RepeatingInvoice.xsd" />
-  <xs:include schemaLocation="BankTransfers.xsd" />
+  <xs:include schemaLocation="BankTransfer.xsd" />
 
   <xs:element name="Response" type="ResponseType" />
   
@@ -63,7 +63,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Users" type="ArrayOfUser" />
       <xs:element minOccurs="0" maxOccurs="1" name="Receipts" type="ArrayOfReceipt" />
       <xs:element minOccurs="0" maxOccurs="1" name="ExpenseClaims" type="ArrayOfExpenseClaim" />
-      <xs:element minOccurs="0" maxOccurs="1" name="RepeatInvoices" type="ArrayOfRepeatInvoice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RepeatingInvoices" type="ArrayOfRepeatingInvoice" />
       <xs:element minOccurs="0" maxOccurs="1" name="BankTransfers" type="ArrayOfBankTransfer" />
       
     </xs:sequence>
