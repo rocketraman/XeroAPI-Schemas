@@ -47,7 +47,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ContactPersons" nillable="false" type="ArrayOfContactPerson" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" nillable="false" type="xs:boolean" />
     </xs:all>
-    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
   <xs:simpleType name="contactNumber">
@@ -86,8 +86,8 @@
 
   <xs:complexType name="Balances">
     <xs:all>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" nillable="true" type="AccountsPayable" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AccountsPayable" nillable="true" type="AccountsPayable" />
     </xs:all>
   </xs:complexType>
 

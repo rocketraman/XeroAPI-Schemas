@@ -32,7 +32,7 @@
       <xs:element name="OrganisationRole" minOccurs="0" maxOccurs="1" type="organisationRole" />
     
     </xs:all>
-    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>

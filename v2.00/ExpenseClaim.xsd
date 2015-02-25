@@ -35,7 +35,7 @@
       <xs:element name="Total" minOccurs="0" maxOccurs="1" type="itemPrice" />
 
     </xs:all>
-    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>
