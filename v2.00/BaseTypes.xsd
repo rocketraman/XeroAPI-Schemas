@@ -74,7 +74,22 @@
       <xs:maxLength value="255" />
     </xs:restriction>
   </xs:simpleType>
-    
+  
+  <!-- Invoice Number -->
+  
+  <xs:simpleType name="invoiceNumberType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <!-- Reference -->
+  <xs:simpleType name="invoiceReferenceType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="4000" />
+    </xs:restriction>
+  </xs:simpleType>    
   
   <!--
   Complex types
