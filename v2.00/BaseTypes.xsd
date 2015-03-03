@@ -85,7 +85,7 @@
   </xs:simpleType>
   
   <!-- Reference -->
-  <xs:simpleType name="invoiceReferenceType">
+  <xs:simpleType name="referenceType">
     <xs:restriction base="xs:string">
       <xs:maxLength value="4000" />
     </xs:restriction>
