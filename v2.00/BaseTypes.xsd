@@ -91,6 +91,13 @@
     </xs:restriction>
   </xs:simpleType>    
   
+  <!-- Tracking Name -->
+  <xs:simpleType name="trackingNameType">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100" />
+    </xs:restriction>
+  </xs:simpleType>   
+  
   <!--
   Complex types
   -->
