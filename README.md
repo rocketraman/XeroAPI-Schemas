@@ -3,7 +3,11 @@ Xero API XSD Schemas
 
 This repository contains a set of XSD schemas that can be used with the [Xero API](http://api.xero.com). Xero provide [online accounting software](http://www.xero.com/) for businesses. For more information on connecting to the API, see the [Xero Developer Centre](http://developer.xero.com/).
 
-**Please Note** These XSD schemas are provided as a guide for the XML that is read/written to the Xero API. They can be used to generate client-side object models for use with the Xero API, but we don't currently recommend that you use them to validate each xml request and response message to the API.
+**Please Note**
+These XSD schemas are provided as a guide for the XML that is read/written to the Xero API 'as is'.
+They can be used to generate client-side object models for use with the Xero API, but we don't currently recommend that you use them to validate each xml request and response message to the API.
+
+Xero does not commit to ensuring these schemas are always kept up to date, but do accept contributions and amendments to ensure they are as accurate as possible.
 
 
 Copyright
@@ -35,22 +39,20 @@ Copyright
 
 Warranty
 --------
- 
+
  Xero API Schemas
 
- The Xero API Schemas is provided under the MIT license as described 
+ The Xero API Schemas is provided under the MIT license as described
  above.
- 
- PLEASE NOTE: No warranty is given to the accuracy of the schema 
- files. The Xero API team reserve the right to introduce new elements 
+
+ PLEASE NOTE: No warranty is given to the accuracy of the schema
+ files. The Xero API team reserve the right to introduce new elements
  to the API request and response messages without warning.
 
  The schemas are provided for reference purposes for generating
  client-side object models. Considering that the schema files may
  not always match the response from the API, we reccommend that you
  do NOT validate response xml messages using the xml schemas.
- 
+
  The use of Xero API is bound by the Xero Terms and Conditions,
  see http://www.xero.com/terms/ for more information.
-
- 
