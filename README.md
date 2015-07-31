@@ -6,7 +6,7 @@ This repository contains a set of XSD schemas that can be used with the [Xero AP
 **Please Note**
 These XSD schemas are provided as a guide for the XML that is read/written to the Xero API 'as is' for information purposes only.
 
-Xero does not commit to ensuring these schemas are always kept up to date, but do accept contributions and amendments to ensure they are as accurate as possible.
+Xero does not commit to ensuring these schemas are always kept up to date, but does accept contributions and amendments to ensure they are as accurate as possible.
 
 
 Copyright
