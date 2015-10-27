@@ -9,7 +9,6 @@
   <xs:include schemaLocation="Contact.xsd" />
   <xs:include schemaLocation="CurrencyCode.xsd" />
   <xs:include schemaLocation="LineItem.xsd" />
-  <xs:include schemaLocation="CreditNote.xsd" />
 
   <xs:element name="Invoices" nillable="true" type="ArrayOfInvoice" />
 
@@ -93,6 +92,24 @@
   <xs:complexType name="ArrayOfPayment">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Payment" nillable="true" type="Payment" />
+    </xs:sequence>
+  </xs:complexType>
+
+   <!-- Credit note against an invoice -->
+  <xs:complexType name="CreditNote">
+    <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="CreditNoteID" type="uniqueIdentifier" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Total" type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AppliedAmount" type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CreditNoteNumber" type="xs:string" />   
+    </xs:all>
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="ArrayOfCreditNote">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CreditNote" nillable="true" type="CreditNote" />
     </xs:sequence>
   </xs:complexType>
   
