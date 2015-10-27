@@ -84,7 +84,7 @@
     </xs:sequence>
   </xs:complexType>
 
-<xs:complexType name="Balances">
+  <xs:complexType name="Balances">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
       <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" nillable="true" type="AccountsPayable" />
