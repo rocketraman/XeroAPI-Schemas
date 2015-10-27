@@ -1,0 +1,11 @@
+addons:
+  apt:
+    packages:
+    - libxml2
+    - libxml2-dev
+    - libxml2-utils
+script:
+- xmllint --noout v2.00/*.xsd
+notifications:
+  flowdock:
+    secure: b+NsNcWpWn9WCvLf16J9v1L/y/wek6r+C0wh3nJeiTyHKTxBoSmyLRF5fjQuQn4pQGpET+CCooc6iVy8lvflZrwTfmeTVh7tKAy9zBOTD9QaIQ33E+0D0BfgXWAU71Bj6eXksPi+W4cwvcFztB73duhqb1sjOQcw1CCM7tgHFOQ=

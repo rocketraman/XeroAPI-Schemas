@@ -8,6 +8,10 @@ These XSD schemas are provided as a guide for the XML that is read/written to th
 
 Xero does not commit to ensuring these schemas are always kept up to date, but does accept contributions and amendments to ensure they are as accurate as possible.
 
+Status
+---------
+[![Build Status](https://travis-ci.org/XeroAPI/XeroAPI-Schemas.svg)](https://travis-ci.org/XeroAPI/XeroAPI-Schemas)
+
 
 Copyright
 ---------
