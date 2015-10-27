@@ -85,10 +85,10 @@
   </xs:complexType>
 
   <xs:complexType name="Balances">
-    <xs:all>
+    <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
       <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" nillable="true" type="AccountsPayable" />
-    </xs:all>
+    </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="AccountsReceivable">
