@@ -15,7 +15,7 @@
   -->
   <xs:simpleType name="timezoneCode">
     <xs:restriction base="xs:token">
-      <xs:enumeration value="MOROCCOSTANDARDTIME"><xs:annotation><xs:documentation>(UTC) Casablanca"</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="MOROCCOSTANDARDTIME""><xs:annotation><xs:documentation>(UTC) Casablanca"</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="UTC"><xs:annotation><xs:documentation>(UTC) Coordinated Universal Time</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="GMTSTANDARDTIME"><xs:annotation><xs:documentation>(UTC) Dublin, Edinburgh, Lisbon, London</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="GREENWICHSTANDARDTIME"><xs:annotation><xs:documentation>(UTC) Monrovia, Reykjavik</xs:documentation></xs:annotation></xs:enumeration>
