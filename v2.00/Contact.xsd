@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="Contact"
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -86,8 +86,8 @@
 
   <xs:complexType name="Balances">
     <xs:all>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" nillable="true" type="AccountsPayable" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
+      <xs:element minOccurs="0" maxOccurs="1" name="AccountsPayable" nillable="true" type="AccountsPayable" />
     </xs:all>
   </xs:complexType>
 
