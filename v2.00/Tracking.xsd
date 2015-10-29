@@ -12,7 +12,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
 
-      <xs:element minOccurs="1" maxOccurs="1" name="Name" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Name" type="trackingNameType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
       
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingCategoryID" type="uniqueIdentifier" />
@@ -20,15 +20,15 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Option" type="xs:string" />
     
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
   <xs:complexType name="TrackingCategoryOption">
     <xs:all>
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingOptionID" type="uniqueIdentifier" />
-      <xs:element minOccurs="1" maxOccurs="1" name="Name" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Name" type="trackingNameType" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
   <xs:complexType name="ArrayOfTrackingCategoryOption">

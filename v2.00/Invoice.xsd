@@ -42,8 +42,8 @@
 
       <xs:element minOccurs="0" maxOccurs="1" name="Type" type="invoiceType" />
       <xs:element minOccurs="0" maxOccurs="1" name="InvoiceID" type="uniqueIdentifier" />
-      <xs:element minOccurs="0" maxOccurs="1" name="InvoiceNumber" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="InvoiceNumber" type="invoiceNumberType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="referenceType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Payments" type="ArrayOfPayment" />
       <xs:element minOccurs="0" maxOccurs="1" name="CreditNotes" type="ArrayOfCreditNote" />
 
@@ -62,7 +62,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachment" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
     <xs:element name="Payments" nillable="true" type="ArrayOfPayment" />
