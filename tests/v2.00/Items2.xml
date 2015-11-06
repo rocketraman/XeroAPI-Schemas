@@ -1,0 +1,23 @@
+<Items>
+  <Item>
+      <ItemID>4194d81d-3f6c-4768-8256-36130714637d</ItemID>
+      <Code>BOOK</Code>
+      <Description>Fish out of Water: Finding Your Brand</Description>
+      <PurchaseDescription>Fish out of Water: Finding Your Brand</PurchaseDescription>
+      <UpdatedDateUTC>2015-10-28T01:28:27.737</UpdatedDateUTC>
+      <PurchaseDetails>
+        <UnitPrice>15.9500</UnitPrice>
+        <AccountCode>500</AccountCode>
+        <TaxType>NONE</TaxType>
+      </PurchaseDetails>
+      <SalesDetails>
+        <UnitPrice>19.9500</UnitPrice>
+        <AccountCode>400</AccountCode>
+        <TaxType>OUTPUT</TaxType>
+      </SalesDetails>
+      <Name>Fish out of Water: Finding Your Brand</Name>
+      <IsTrackedAsInventory>false</IsTrackedAsInventory>
+      <IsSold>true</IsSold>
+      <IsPurchased>true</IsPurchased>
+    </Item>
+</Items>

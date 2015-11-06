@@ -1,0 +1,47 @@
+<Items>
+    <Item>
+      <ItemID>2f00bef1-5fe6-4d95-932d-99cd20f3bf45</ItemID>
+      <Code>TSL - Black</Code>
+      <Description>Company Branded T-Shirt Large Black.  Check out our website for other offers!</Description>
+      <PurchaseDescription>Company Branded T-Shirt Large Black.  Order Code #2412</PurchaseDescription>
+      <UpdatedDateUTC>2015-10-28T01:28:27.737</UpdatedDateUTC>
+      <PurchaseDetails>
+        <UnitPrice>20.0000</UnitPrice>
+        <COGSAccountCode>500</COGSAccountCode>
+        <TaxType>NONE</TaxType>
+      </PurchaseDetails>
+      <SalesDetails>
+        <UnitPrice>40.0000</UnitPrice>
+        <AccountCode>400</AccountCode>
+        <TaxType>OUTPUT</TaxType>
+      </SalesDetails>
+      <Name>T-Shirt Large Black</Name>
+      <IsTrackedAsInventory>true</IsTrackedAsInventory>
+      <InventoryAssetAccountCode>140</InventoryAssetAccountCode>
+      <TotalCostPool>100.00</TotalCostPool>
+      <QuantityOnHand>5.0000</QuantityOnHand>
+      <IsSold>true</IsSold>
+      <IsPurchased>true</IsPurchased>
+    </Item>
+    <Item>
+      <ItemID>4194d81d-3f6c-4768-8256-36130714637d</ItemID>
+      <Code>BOOK</Code>
+      <Description>Fish out of Water: Finding Your Brand</Description>
+      <PurchaseDescription>Fish out of Water: Finding Your Brand</PurchaseDescription>
+      <UpdatedDateUTC>2015-10-28T01:28:27.737</UpdatedDateUTC>
+      <PurchaseDetails>
+        <UnitPrice>15.9500</UnitPrice>
+        <AccountCode>500</AccountCode>
+        <TaxType>NONE</TaxType>
+      </PurchaseDetails>
+      <SalesDetails>
+        <UnitPrice>19.9500</UnitPrice>
+        <AccountCode>400</AccountCode>
+        <TaxTypssssse>OUTPUT</TaxType>
+      </SalesDetails>
+      <Name>Fish out of Water: Finding Your Brand</Name>
+      <IsTrackedAsInventory>false</IsTrackedAsInventory>
+      <IsSold>true</IsSold>
+      <IsPurchased>true</IsPurchased>
+    </Item>
+  </Items>
