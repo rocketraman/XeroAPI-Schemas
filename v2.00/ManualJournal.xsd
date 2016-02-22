@@ -4,6 +4,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
   <xs:include schemaLocation="BaseTypes.xsd" />
+  <xs:include schemaLocation="Tracking.xsd" />
 
   <xs:element name="Manualjournals" type="ArrayOfManualJournal" />
 
@@ -32,7 +33,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ExternalLinkProviderName" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="ShowOnCashBasisReports" type="xs:boolean" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
   <!--
@@ -55,9 +56,10 @@
       <xs:element minOccurs="0" maxOccurs="1" name="TaxAmount" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineAmount" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="AccountCode" type="accountCode" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Tracking" type="TrackingCategory" />
 
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>

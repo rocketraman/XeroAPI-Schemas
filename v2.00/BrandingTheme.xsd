@@ -25,7 +25,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="SortOrder" type="xs:integer" />
       <xs:element minOccurs="0" maxOccurs="1" name="CreatedDateUTC" type="xs:dateTime" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>
