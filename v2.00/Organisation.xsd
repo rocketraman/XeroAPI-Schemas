@@ -46,6 +46,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="EndOfYearLockDate" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="CreatedDateUTC" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="Timezone" type="timezoneCode" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ShortCode" type="xs:string" />
 
       <xs:element minOccurs="0" maxOccurs="1" name="Addresses" type="ArrayOfAddress" />
       <xs:element minOccurs="0" maxOccurs="1" name="Phones" type="ArrayOfPhone" />
