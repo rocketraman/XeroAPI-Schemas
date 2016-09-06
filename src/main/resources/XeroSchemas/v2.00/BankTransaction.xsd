@@ -18,6 +18,7 @@
   </xs:complexType>
 
   <!-- Bank Transaction (Spend Money or Receice Money) -->
+  <xs:element name="BankTransaction" type="BankTransaction" />
   <xs:complexType name="BankTransaction">
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
