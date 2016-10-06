@@ -8,6 +8,7 @@
   <xs:include schemaLocation="BrandingTheme.xsd" />
   <xs:include schemaLocation="Phone.xsd" />
   <xs:include schemaLocation="CurrencyCode.xsd" />
+  <xs:include schemaLocation="ContactGroup.xsd" />
 
   <xs:element name="Contacts" nillable="true" type="ArrayOfContact" />
 
@@ -16,7 +17,6 @@
         <xs:element minOccurs="0" maxOccurs="unbounded" name="Contact" nillable="true" type="Contact" />
       </xs:sequence>
   </xs:complexType>
-
 
   <xs:complexType name="Contact">
     <xs:all>
@@ -64,18 +64,6 @@
       <xs:maxLength value="50" />
     </xs:restriction>
   </xs:simpleType>
-
-  <xs:complexType name="ArrayOfContactGroup">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContactGroup" nillable="true" type="ContactGroup" />
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="ContactGroup">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="1" name="Name" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
 
   <xs:complexType name="ArrayOfContactPerson">
     <xs:sequence>
