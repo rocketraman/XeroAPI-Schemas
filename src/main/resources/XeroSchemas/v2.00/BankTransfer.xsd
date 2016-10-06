@@ -20,16 +20,16 @@
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
-      <xs:element minOccurs="1" maxOccurs="1" name="BankTransferID" type="uniqueIdentifier" />
-      <xs:element minOccurs="1" maxOccurs="1" name="CreatedDateUTC" type="xs:dateTime" />
-      <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="FromBankAccount" type="BankAccount" />
       <xs:element minOccurs="1" maxOccurs="1" name="ToBankAccount" type="BankAccount" />
       <xs:element minOccurs="1" maxOccurs="1" name="Amount" type="itemPrice" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="BankTransferID" type="uniqueIdentifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CurrencyRate" type="currencyRate" />
       <xs:element minOccurs="1" maxOccurs="1" name="FromBankTransactionID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="ToBankTransactionID" type="uniqueIdentifier" />
-      <xs:element minOccurs="0" maxOccurs="1" name="CurrencyRate" type="currencyRate" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CreatedDateUTC" type="xs:dateTime" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
