@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="BaseTypes"
     elementFormDefault="qualified"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
   
   <!--
   Simple Types
@@ -249,6 +248,16 @@
       <xs:enumeration value="UNREALISEDCURRENCYGAIN"><xs:annotation><xs:documentation>Unrealised FX</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="BANKCURRENCYGAIN"><xs:annotation><xs:documentation>Bank Revaluations</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="WAGEPAYABLES"><xs:annotation><xs:documentation>Wage Payables</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Bank Account Type -->
+  <xs:simpleType name="bankAccountType">
+    <xs:annotation><xs:documentation>Account Type</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="BANK"><xs:annotation><xs:documentation>Bank</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CREDITCARD"><xs:annotation><xs:documentation>Credit Card</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="PAYPAL"><xs:annotation><xs:documentation>PayPal</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
 

@@ -19,7 +19,6 @@
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
-
   <xs:complexType name="TrackingCategories">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="1" name="EmployeeGroups" type="EmployeeGroups" />
@@ -33,7 +32,6 @@
       <xs:element minOccurs="0" maxOccurs="1" name="TrackingCategoryName" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-
 
   <xs:complexType name="TimesheetCategories">
     <xs:sequence>
