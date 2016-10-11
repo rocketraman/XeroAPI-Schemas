@@ -385,6 +385,38 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Account Type -->
+  <xs:simpleType name="journalSourceType">
+    <xs:annotation><xs:documentation>Journal Source Type</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ACCREC"><xs:annotation><xs:documentation>Accounts Receivable Invoice</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCPAY"><xs:annotation><xs:documentation>Accounts Payable Invoice</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCRECCREDIT"><xs:annotation><xs:documentation>Accounts Receivable Credit Note</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCPAYCREDIT"><xs:annotation><xs:documentation>Accounts Payable Credit Note</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCRECPAYMENT"><xs:annotation><xs:documentation>Payment on an Accounts Receivable Invoice</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCPAYPAYMENT"><xs:annotation><xs:documentation>Payment on an Accounts Payable Invoice</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ARCREDITPAYMENT"><xs:annotation><xs:documentation>Accounts Receivable Credit Note Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="APCREDITPAYMENT"><xs:annotation><xs:documentation>Accounts Payable Credit Note Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CASHREC"><xs:annotation><xs:documentation>Receive Money Bank Transaction</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CASHPAID"><xs:annotation><xs:documentation>Spend Money Bank Transaction</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="TRANSFER"><xs:annotation><xs:documentation>Bank Transfer</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ARPREPAYMENT"><xs:annotation><xs:documentation>Accounts Receivable Prepayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="APPREPAYMENT"><xs:annotation><xs:documentation>Accounts Payable Prepayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="AROVERPAYMENT"><xs:annotation><xs:documentation>Accounts Receivable Overpayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="APOVERPAYMENT"><xs:annotation><xs:documentation>Accounts Payable Overpayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXPCLAIM"><xs:annotation><xs:documentation>Expense Claim</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXPPAYMENT"><xs:annotation><xs:documentation>Expense Claim Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="MANJOURNAL"><xs:annotation><xs:documentation>Manual Journal</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="PAYSLIP"><xs:annotation><xs:documentation>Payslip</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="WAGEPAYABLE"><xs:annotation><xs:documentation>Payroll Payable</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INTEGRATEDPAYROLLPE"><xs:annotation><xs:documentation>Payroll Expense</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INTEGRATEDPAYROLLPT"><xs:annotation><xs:documentation>Payroll Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXTERNALSPENDMONEY"><xs:annotation><xs:documentation>Payroll Employee Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INTEGRATEDPAYROLLPTPAYMENT"><xs:annotation><xs:documentation>Payroll Tax Payment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INTEGRATEDPAYROLLCN"><xs:annotation><xs:documentation>Payroll Credit Note</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
   
   <!-- Manual Journal Status Enumeration-->
   <xs:simpleType name="manualJournalStatus">
