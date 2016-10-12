@@ -259,6 +259,16 @@
       <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+
+  <!-- Prepayment Status -->
+  <xs:simpleType name="prepaymentStatus">
+    <xs:annotation><xs:documentation>Overpayment Status</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="AUTHORISED"><xs:annotation><xs:documentation>Authorised</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="PAID"><xs:annotation><xs:documentation>Paid</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   
   <!-- Account Type -->
   <xs:simpleType name="accountType">
@@ -423,6 +433,17 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="RECEIVE-OVERPAYMENT"><xs:annotation><xs:documentation>Receive Overpayment</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="SPEND-OVERPAYMENT"><xs:annotation><xs:documentation>Spend Overpayment</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Document types for 'prepaymentType' endpoint -->
+  <xs:simpleType name="prepaymentType">
+    <xs:annotation>
+      <xs:documentation>Prepayment Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="RECEIVE-PREPAYMENT"><xs:annotation><xs:documentation>Receive Prepayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="SPEND-PREPAYMENT"><xs:annotation><xs:documentation>Spend Prepayment</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
     
