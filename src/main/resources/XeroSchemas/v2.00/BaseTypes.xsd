@@ -366,11 +366,32 @@
   <!-- Document types for 'CreditNote' endpoint -->
   <xs:simpleType name="creditNoteType">
     <xs:annotation>
-      <xs:documentation>Invoice Type</xs:documentation>
+      <xs:documentation>Credit Note Type</xs:documentation>
     </xs:annotation>
     <xs:restriction base="xs:token">
       <xs:enumeration value="ACCPAYCREDIT"></xs:enumeration>
       <xs:enumeration value="ACCRECCREDIT"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+   <!-- Document types for 'Linked Transaction Type' endpoint -->
+  <xs:simpleType name="linkedTransactionType">
+    <xs:annotation>
+      <xs:documentation>Linked Transaction Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="BILLABLEEXPENSE"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+   <!-- Document types for 'Source Transaction Type' endpoint -->
+  <xs:simpleType name="sourceTransactionTypeCode">
+    <xs:annotation>
+      <xs:documentation>Source Transaction Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ACCPAY"></xs:enumeration>
+      <xs:enumeration value="SPEND"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
 
@@ -417,6 +438,17 @@
     </xs:restriction>
   </xs:simpleType>
 
+ <!-- Linked Transaction Status -->
+  <xs:simpleType name="linkedTransactionStatus">
+    <xs:annotation><xs:documentation>Linked Transaction Status</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="DRAFT"><xs:annotation><xs:documentation>Draft</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="APPROVED"><xs:annotation><xs:documentation>Approved</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ONDRAFT"><xs:annotation><xs:documentation>On Draft</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="BILLED"><xs:annotation><xs:documentation>Billed</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   
   <!-- Manual Journal Status Enumeration-->
   <xs:simpleType name="manualJournalStatus">
