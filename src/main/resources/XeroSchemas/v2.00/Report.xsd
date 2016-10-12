@@ -27,7 +27,6 @@
     </xs:sequence>
   </xs:complexType>
 
-  
   <!-- ReportTitles-->
   <xs:complexType name="ReportTitles">
     <xs:sequence>
@@ -35,7 +34,6 @@
     </xs:sequence>
   </xs:complexType>
 
-  
   <!-- ReportAttributes -->
   <xs:complexType name="ReportAttributes">
     <xs:sequence>
@@ -51,7 +49,6 @@
     </xs:sequence>
   </xs:complexType>
   
-  
   <!-- ReportFields -->
   <xs:complexType name="ReportFields">
     <xs:sequence>
@@ -66,7 +63,6 @@
       <xs:element name="Value" minOccurs="1" maxOccurs="1" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  
   
   <!-- ReportRows -->
   <xs:complexType name="ReportRows">
@@ -95,14 +91,12 @@
     </xs:restriction>
   </xs:simpleType>
 
-  
   <!-- ReportCells -->
   <xs:complexType name="ReportCells">
     <xs:sequence>
       <xs:element name="Cell" minOccurs="0" maxOccurs="unbounded" type="ReportCell" />
     </xs:sequence>
   </xs:complexType>
-
 
   <xs:complexType name="ReportCell">
     <xs:sequence>

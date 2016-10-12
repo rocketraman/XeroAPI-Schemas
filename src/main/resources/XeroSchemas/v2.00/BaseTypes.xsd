@@ -209,8 +209,36 @@
       <xs:pattern value="TAX[0-9][0-9][0-9]"></xs:pattern>
     </xs:restriction>
   </xs:simpleType>
-  
 
+  <!-- Document types for 'reportTaxType' endpoint -->
+  <xs:simpleType name="reportTaxType">
+    <xs:annotation>
+      <xs:documentation>Report Tax Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="OUTPUT"><xs:annotation><xs:documentation>Output</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INPUT"><xs:annotation><xs:documentation>Input</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXEMPTOUTPUT"><xs:annotation><xs:documentation>EXEMPTOUTPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INPUTTAXED"><xs:annotation><xs:documentation>INPUTTAXED</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="BASEXCLUDED"><xs:annotation><xs:documentation>BASEXCLUDED</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXEMPTEXPENSES"><xs:annotation><xs:documentation>EXEMPTEXPENSES</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXEMPTCAPITAL"><xs:annotation><xs:documentation>EXEMPTCAPITAL</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXEMPTEXPORT"><xs:annotation><xs:documentation>EXEMPTEXPORT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CAPITALEXINPUT"><xs:annotation><xs:documentation>CAPITALEXINPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="GSTONCAPIMPORTS"><xs:annotation><xs:documentation>GSTONCAPIMPORTS</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="GSTONIMPORTS"><xs:annotation><xs:documentation>GSTONIMPORTS</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="EXEMPTINPUT"><xs:annotation><xs:documentation>EXEMPTINPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="NONE"><xs:annotation><xs:documentation>NONE</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ECOUTPUT"><xs:annotation><xs:documentation>ECOUTPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ECOUTPUTSERVICES"><xs:annotation><xs:documentation>ECOUTPUTSERVICES</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ECINPUT"><xs:annotation><xs:documentation>ECINPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ECACQUISITIONS"><xs:annotation><xs:documentation>ECACQUISITIONS</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CAPITALSALESOUTPUT"><xs:annotation><xs:documentation>CAPITALSALESOUTPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CAPITALEXPENSESINPUT"><xs:annotation><xs:documentation>CAPITALEXPENSESINPUT</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="MOSSSALES"><xs:annotation><xs:documentation>MOSSSALES</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="REVERSECHARGES"><xs:annotation><xs:documentation>REVERSECHARGES</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
 
   <!-- Sales Tax Basis  -->
   <xs:simpleType name="salesTaxBasis">
