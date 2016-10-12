@@ -147,5 +147,13 @@
             </jxb:bindings>
         </jxb:bindings>
     </jxb:bindings>
+
+    <jxb:bindings schemaLocation="Overpayment.xsd" node="/xsd:schema">
+        <jxb:bindings node="//xsd:complexType[@name='Overpayment']">
+            <jxb:bindings node="./xsd:attribute[@name='status']">
+                <jxb:property name="validationStatus"/>
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
    
 </jxb:bindings>

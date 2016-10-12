@@ -249,6 +249,16 @@
       <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+
+  <!-- Overpayment Status -->
+  <xs:simpleType name="overpaymentStatus">
+    <xs:annotation><xs:documentation>Overpayment Status</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="AUTHORISED"><xs:annotation><xs:documentation>Authorised</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="PAID"><xs:annotation><xs:documentation>Paid</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   
   <!-- Account Type -->
   <xs:simpleType name="accountType">
@@ -402,6 +412,17 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="ACCPAY"><xs:annotation><xs:documentation>Accounts Payable</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="ACCREC"><xs:annotation><xs:documentation>Accounts Receivable</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Document types for 'overpaymentType' endpoint -->
+  <xs:simpleType name="overpaymentType">
+    <xs:annotation>
+      <xs:documentation>Overpayment Type</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="RECEIVE-OVERPAYMENT"><xs:annotation><xs:documentation>Receive Overpayment</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="SPEND-OVERPAYMENT"><xs:annotation><xs:documentation>Spend Overpayment</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
     
