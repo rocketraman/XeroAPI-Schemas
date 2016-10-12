@@ -163,5 +163,13 @@
             </jxb:bindings>
         </jxb:bindings>
     </jxb:bindings>
+
+    <jxb:bindings schemaLocation="PurchaseOrder.xsd" node="/xsd:schema">
+        <jxb:bindings node="//xsd:complexType[@name='PurchaseOrder']">
+            <jxb:bindings node="./xsd:attribute[@name='status']">
+                <jxb:property name="validationStatus"/>
+            </jxb:bindings>
+        </jxb:bindings>
+    </jxb:bindings>
    
 </jxb:bindings>

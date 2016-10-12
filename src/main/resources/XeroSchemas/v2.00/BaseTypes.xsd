@@ -75,11 +75,26 @@
   </xs:simpleType>
   
   <!-- Invoice Number -->
-  
   <xs:simpleType name="invoiceNumberType">
     <xs:restriction base="xs:string">
       <xs:minLength value="1" />
       <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- PurchaseOrderNumber -->
+  <xs:simpleType name="purchaseOrderNumberType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- PurchaseOrderNumber -->
+  <xs:simpleType name="deliveryInstructionsType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="500" />
     </xs:restriction>
   </xs:simpleType>
   
@@ -267,6 +282,18 @@
       <xs:enumeration value="AUTHORISED"><xs:annotation><xs:documentation>Authorised</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="PAID"><xs:annotation><xs:documentation>Paid</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="VOIDED"><xs:annotation><xs:documentation>Voided</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Purchase Order Status -->
+  <xs:simpleType name="purchaseOrderStatus">
+    <xs:annotation><xs:documentation>Purchase Order Status</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="AUTHORISED"><xs:annotation><xs:documentation>Authorised</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="DRAFT"><xs:annotation><xs:documentation>Draft</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="SUBMITTED"><xs:annotation><xs:documentation>Submitted</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="BILLED"><xs:annotation><xs:documentation>Billed</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="DELETED"><xs:annotation><xs:documentation>Deleted</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
   
