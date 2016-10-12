@@ -195,6 +195,48 @@
     </xs:restriction>
   </xs:simpleType>
   
+
+
+  <!-- Sales Tax Basis  -->
+  <xs:simpleType name="salesTaxBasis">
+    <xs:annotation><xs:documentation>Sales Tax Basis</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="PAYMENTS"><xs:annotation><xs:documentation>Payments Basis</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="INVOICE"><xs:annotation><xs:documentation>Invoice Basis</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="NONE"><xs:annotation><xs:documentation>None</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CASH"><xs:annotation><xs:documentation>Cash Scheme</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCRUAL"><xs:annotation><xs:documentation>Accrual Scheme</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="FLATRATECASH"><xs:annotation><xs:documentation>Flat Rate Cash Scheme</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="FLATRATEACCRUAL"><xs:annotation><xs:documentation>Flat Rate Accrual Scheme</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="CASH"><xs:annotation><xs:documentation>Cash Basis</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ACCRUALS"><xs:annotation><xs:documentation>Accruals Basis</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Sales Tax Periods  -->
+  <xs:simpleType name="salesTaxPeriod">
+    <xs:annotation><xs:documentation>Sales Tax Period</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+        <xs:enumeration value="MONTHLY"><xs:annotation><xs:documentation>Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="QUARTERLY1"><xs:annotation><xs:documentation>Quarterly (Option1)</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="QUARTERLY2"><xs:annotation><xs:documentation>Quarterly (Option2)</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="QUARTERLY3"><xs:annotation><xs:documentation>Quarterly (Option3)</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="ANNUALLY"><xs:annotation><xs:documentation>Annually</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="ONEMONTHS"><xs:annotation><xs:documentation>Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="TWOMONTHS"><xs:annotation><xs:documentation>2 Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="SIXMONTHS"><xs:annotation><xs:documentation>6 Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="1MONTHLY"><xs:annotation><xs:documentation>Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="2MONTHLY"><xs:annotation><xs:documentation>2 Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="3MONTHLY"><xs:annotation><xs:documentation>3 Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="6MONTHLY"><xs:annotation><xs:documentation>6 Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="ANNUALLY"><xs:annotation><xs:documentation>Annually</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="MONTHLY"><xs:annotation><xs:documentation>Monthly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="QUARTERLY"><xs:annotation><xs:documentation>Quarterly</xs:documentation></xs:annotation></xs:enumeration>
+        <xs:enumeration value="YEARLY"><xs:annotation><xs:documentation>Yearly</xs:documentation></xs:annotation></xs:enumeration>
+      </xs:restriction>
+  </xs:simpleType>
+
+
   <!-- Invoice Status -->
   <xs:simpleType name="invoiceStatus">
     <xs:annotation><xs:documentation>Invoice Status</xs:documentation></xs:annotation>
@@ -536,7 +578,30 @@
       <xs:enumeration value="TRUST"></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  
+
+  <!-- External Link Type -->
+  <xs:simpleType name="externalLinkType">
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="Facebook"></xs:enumeration>
+      <xs:enumeration value="GooglePlus"></xs:enumeration>
+      <xs:enumeration value="LinkedIn"></xs:enumeration>
+      <xs:enumeration value="Twitter"></xs:enumeration>
+      <xs:enumeration value="Website"></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Payment Terms -->
+   <!-- Contact Group Status-->
+  <xs:simpleType name="paymentTermType">
+    <xs:annotation><xs:documentation>Payment Term Type</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="DAYSAFTERBILLDATE"><xs:annotation><xs:documentation>day(s) after bill date</xs:documentation></xs:annotation></xs:enumeration>
+       <xs:enumeration value="DAYSAFTERBILLMONTH"><xs:annotation><xs:documentation>day(s) after bill month</xs:documentation></xs:annotation></xs:enumeration>
+       <xs:enumeration value="OFCURRENTMONTH"><xs:annotation><xs:documentation>of the current month</xs:documentation></xs:annotation></xs:enumeration>
+       <xs:enumeration value="OFFOLLOWINGMONTH"><xs:annotation><xs:documentation>of the following month</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction> 
+  </xs:simpleType>
+
   <!-- trueOrFalse -->
   <xs:simpleType name="trueOrFalse">
     <xs:restriction base="xs:token">
