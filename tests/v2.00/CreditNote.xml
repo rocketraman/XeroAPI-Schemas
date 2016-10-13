@@ -86,5 +86,11 @@
       </Attachments>
       <CreditNoteID>5fb94857-b979-4548-95e6-0e58e27b3c49</CreditNoteID>
       <CreditNoteNumber>CN-0026</CreditNoteNumber>
+      <ValidationErrors></ValidationErrors>
+      <Warnings></Warnings>
+      <Reference></Reference> 
+      <SentToContact></SentToContact>
+      <BrandingThemeID></BrandingThemeID> 
+      <AppliedAmount></AppliedAmount>
     </CreditNote>
   </CreditNotes>
