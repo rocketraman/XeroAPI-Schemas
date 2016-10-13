@@ -89,8 +89,8 @@
       <ValidationErrors></ValidationErrors>
       <Warnings></Warnings>
       <Reference></Reference> 
-      <SentToContact>fales</SentToContact>
-      <BrandingThemeID>123456</BrandingThemeID> 
+      <SentToContact>false</SentToContact>
+      <BrandingThemeID>dabc7637-62c1-4941-8a6e-ee44fa5090e7</BrandingThemeID>
       <AppliedAmount>0</AppliedAmount>
     </CreditNote>
   </CreditNotes>
