@@ -21,14 +21,14 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="overpaymentStatus" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes" nillable="true" type="lineAmountType" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineItems" type="ArrayOfLineItem" />
-      <xs:element minOccurs="1" maxOccurs="1" name="SubTotal" type="xs:decimal" />
-      <xs:element minOccurs="1" maxOccurs="1" name="TotalTax" type="xs:decimal" />
-      <xs:element minOccurs="1" maxOccurs="1" name="Total" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SubTotal" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TotalTax" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Total" type="xs:decimal" />
       <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="OverpaymentID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyRate" type="currencyRate" />
-      <xs:element minOccurs="1" maxOccurs="1" name="RemainingCredit" type="xs:decimal" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RemainingCredit" type="xs:decimal" />
       <xs:element minOccurs="0" maxOccurs="1" name="Allocations" type="ArrayOfAllocation" />
       <xs:element minOccurs="0" maxOccurs="1" name="Payments" type="ArrayOfPayment" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />   
