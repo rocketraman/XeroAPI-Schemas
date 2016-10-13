@@ -49,8 +49,8 @@
       <xs:element minOccurs="0" maxOccurs="1" name="InvoiceID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="Payments" type="ArrayOfPayment" />
-      <xs:element minOccurs="0" maxOccurs="1" name="PrePayments" type="ArrayOfPrepayment" />
-      <xs:element minOccurs="0" maxOccurs="1" name="OverPayments" type="ArrayOfOverpayment" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Prepayments" type="ArrayOfPrepayment" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Overpayments" type="ArrayOfOverpayment" />
       <xs:element minOccurs="0" maxOccurs="1" name="AmountDue" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="AmountPaid" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="FullyPaidOnDate" nillable="true" type="xs:dateTime" />
