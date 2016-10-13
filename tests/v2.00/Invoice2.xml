@@ -59,14 +59,6 @@
       <FullyPaidOnDate>2011-12-31T00:00:00</FullyPaidOnDate>
       <Type>ACCREC</Type>
       <InvoiceID>b6c23cb9-7f07-446a-a468-f0376b12f6f6</InvoiceID>
-      <Overpayments>
-        <Overpayment>
-          <Date>2016-10-13T00:00:00</Date>
-          <Total>9.00</Total>
-          <AppliedAmount>9.00</AppliedAmount>
-          <OverpaymentID>7d457db3-3b0a-47e9-8b79-81252a7bcdcb</OverpaymentID>
-        </Overpayment>
-      </Overpayments>
       <InvoiceNumber>INV-0002</InvoiceNumber>
       <Reference>INV REF 001 RQ</Reference>
       <CreditNotes>
