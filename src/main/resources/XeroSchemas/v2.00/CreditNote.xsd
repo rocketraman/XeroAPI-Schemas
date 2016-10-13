@@ -45,6 +45,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="BrandingThemeID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachment" />
+      <xs:element minOccurs="1" maxOccurs="1" name="AppliedAmount" nillable="true" type="itemPrice" />      
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
