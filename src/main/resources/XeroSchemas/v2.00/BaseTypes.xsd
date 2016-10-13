@@ -753,6 +753,12 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="SPEND"/>
       <xs:enumeration value="RECEIVE"/>
+      <xs:enumeration value="RECEIVE-OVERPAYMENT"/>
+      <xs:enumeration value="RECEIVE-PREPAYMENT"/>
+      <xs:enumeration value="SPEND-OVERPAYMENT"/>
+      <xs:enumeration value="SPEND-PREPAYMENT"/>
+      <xs:enumeration value="RECEIVE-TRANSFER"/>
+      <xs:enumeration value="SPEND-TRANSFER"/>
     </xs:restriction>
   </xs:simpleType>
 
