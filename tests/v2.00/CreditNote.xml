@@ -89,8 +89,8 @@
       <ValidationErrors></ValidationErrors>
       <Warnings></Warnings>
       <Reference></Reference> 
-      <SentToContact></SentToContact>
-      <BrandingThemeID></BrandingThemeID> 
-      <AppliedAmount></AppliedAmount>
+      <SentToContact>fales</SentToContact>
+      <BrandingThemeID>123456</BrandingThemeID> 
+      <AppliedAmount>0</AppliedAmount>
     </CreditNote>
   </CreditNotes>
