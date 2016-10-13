@@ -19,10 +19,12 @@
     </xs:sequence>
   </xs:complexType>
   
+ValidationErrors, Warnings, Reference, SentToContact, BrandingThemeID, AppliedAmount 
+
   <xs:complexType name="CreditNote">
     <xs:all>
-      <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" nillable="true" type="ArrayOfValidationError" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Warnings" nillable="true" type="ArrayOfWarning" />
       <xs:element minOccurs="0" maxOccurs="1" name="Type" type="creditNoteType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
       <xs:element minOccurs="1" maxOccurs="1" name="Date" nillable="true" type="xs:dateTime" />
@@ -37,12 +39,12 @@
       <xs:element minOccurs="0" maxOccurs="1" name="FullyPaidOnDate" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="CreditNoteID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="CreditNoteNumber" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="SentToContact" type="trueOrFalse" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Reference" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SentToContact" nillable="true" type="trueOrFalse" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyRate" type="currencyRate" />
       <xs:element minOccurs="0" maxOccurs="1" name="RemainingCredit" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="Allocations" type="ArrayOfAllocation" />
-      <xs:element minOccurs="0" maxOccurs="1" name="BrandingThemeID" type="uniqueIdentifier" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BrandingThemeID" nillable="true" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="Attachments" type="ArrayOfAttachment" />
       <xs:element minOccurs="1" maxOccurs="1" name="AppliedAmount" nillable="true" type="itemPrice" />      

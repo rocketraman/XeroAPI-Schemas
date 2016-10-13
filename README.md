@@ -9,6 +9,7 @@ We've added support for maven build automation.  A pom.xml file in the root defi
 
 ```mvn clean install
 
+A new *target* directory will be created along with subfolders.  Look in the xjc subfolder for your Java classes.
 
 
 **Please Note**
