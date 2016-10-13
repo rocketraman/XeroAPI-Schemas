@@ -7,9 +7,11 @@ Maven Support
 ---------
 We've added support for maven build automation.  A pom.xml file in the root defines how to generate Java classes from the XSD files in this project.  To generate you Java classes, open your terminal app and change to the directory containing the pom.xml file and run the following command
 
-```mvn clean install
+```bash
+mvn clean install 
+```
 
-A new *target* directory will be created along with subfolders.  Look in the xjc subfolder for your Java classes.
+A new *target* directory will be created along with subfolders.  Look in the *generated-source* subfolder for your Java classes.
 
 
 **Please Note**
