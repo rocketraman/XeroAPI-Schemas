@@ -35,6 +35,7 @@
     <xs:restriction base="xs:string">
       <xs:enumeration value="POBOX" />
       <xs:enumeration value="STREET" />
+      <xs:enumeration value="DELIVERY" />
     </xs:restriction>
   </xs:simpleType>
 
