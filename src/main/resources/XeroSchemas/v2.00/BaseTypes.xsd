@@ -767,6 +767,7 @@
     <xs:restriction base="xs:token">
       <xs:enumeration value="ACTIVE" />
       <xs:enumeration value="DELETED" />
+      <xs:enumeration value="ARCHIVED" />
     </xs:restriction>
   </xs:simpleType>
   
