@@ -64,6 +64,14 @@
       <FullyPaidOnDate>2012-10-19T00:00:00</FullyPaidOnDate>
       <Type>ACCPAY</Type>
       <InvoiceID>ad98e90d-5bcd-4b5c-bb7c-6d78fc86a15e</InvoiceID>
+      <Overpayments>
+        <Overpayment>
+          <Date>2016-10-13T00:00:00</Date>
+          <Total>9.00</Total>
+          <AppliedAmount>9.00</AppliedAmount>
+          <OverpaymentID>7d457db3-3b0a-47e9-8b79-81252a7bcdcb</OverpaymentID>
+        </Overpayment>
+      </Overpayments>
       <InvoiceNumber>INV-PQ-1200</InvoiceNumber>
       <Payments>
         <Payment>
