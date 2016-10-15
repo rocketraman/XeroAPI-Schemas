@@ -160,6 +160,18 @@
   -->
 
   <!-- Line Amount Type -->
+   <!-- Account Type -->
+  <xs:simpleType name="lineAmountType">
+    <xs:annotation><xs:documentation>Line Amount Type</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="NoTax"><xs:annotation><xs:documentation>No Tax</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="Inclusive"><xs:annotation><xs:documentation>Tax Inclusive</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="Exclusive"><xs:annotation><xs:documentation>Tax Exclusive</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+
+
+<!--
   <xs:simpleType name="lineAmountType">
     <xs:list>
       <xs:simpleType>
@@ -171,6 +183,7 @@
       </xs:simpleType>
     </xs:list>
   </xs:simpleType>
+-->
 
   <!-- Tax Type -->
   <!-- See http://www.ibm.com/developerworks/library/x-extenum/ for info on how xs:union helps here -->
