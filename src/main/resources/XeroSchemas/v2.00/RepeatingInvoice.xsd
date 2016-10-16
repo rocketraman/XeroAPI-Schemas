@@ -27,14 +27,14 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
       <xs:element minOccurs="0" maxOccurs="1" name="Schedule" type="Schedule" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineItems" type="ArrayOfLineItem" />
-      <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes" nillable="true" type="lineAmountType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes" type="lineAmountType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Reference" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="BrandingThemeID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="invoiceStatus" />
-      <xs:element minOccurs="0" maxOccurs="1" name="SubTotal" nillable="true" type="itemPrice" />
-      <xs:element minOccurs="0" maxOccurs="1" name="TotalTax" nillable="true" type="itemPrice" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Total" nillable="true" type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="SubTotal" type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="TotalTax" type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Total"  type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="RepeatingInvoiceID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
     </xs:all>

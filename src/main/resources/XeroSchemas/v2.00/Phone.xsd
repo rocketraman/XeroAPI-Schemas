@@ -9,7 +9,6 @@
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
-
       <xs:element minOccurs="0" maxOccurs="1" name="PhoneType" type="phoneTypeCodeType" />
       <xs:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="phoneNumberType" />
       <xs:element minOccurs="0" maxOccurs="1" name="PhoneAreaCode" type="phoneAreaCodeType" />

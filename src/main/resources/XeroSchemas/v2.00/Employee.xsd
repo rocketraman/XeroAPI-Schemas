@@ -7,18 +7,14 @@
 
   <xs:element name="Employees" type="ArrayOfEmployee" />
 
-  <!-- 
-  ArrayOfEmployee 
-  -->
+  <!--   ArrayOfEmployee   -->
   <xs:complexType name="ArrayOfEmployee">
     <xs:sequence>
       <xs:element name="Employee" minOccurs="0" maxOccurs="unbounded" type="Employee" />
     </xs:sequence>
   </xs:complexType>
 
-  <!-- 
-  Employee 
-  -->
+  <!--   Employee   -->
   <xs:complexType name="Employee">
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />

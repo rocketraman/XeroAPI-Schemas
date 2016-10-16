@@ -19,12 +19,12 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
       <xs:element minOccurs="1" maxOccurs="1" name="Date" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="prepaymentStatus" />
-      <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes" nillable="true" type="lineAmountType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes" type="lineAmountType" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineItems" type="ArrayOfLineItem" />
       <xs:element minOccurs="1" maxOccurs="1" name="SubTotal" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="TotalTax" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="Total" type="xs:decimal" />
-      <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="PrepaymentID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyRate" type="currencyRate" />
