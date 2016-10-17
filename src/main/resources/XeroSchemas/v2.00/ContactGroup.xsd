@@ -21,7 +21,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Name" type="contactGroupName" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="contactGroupStatus" />
       <xs:element minOccurs="0" maxOccurs="1" name="ContactGroupID" type="uniqueIdentifier" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Contacts" nillable="true" type="ArrayOfContact" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Contacts" type="ArrayOfContact" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>

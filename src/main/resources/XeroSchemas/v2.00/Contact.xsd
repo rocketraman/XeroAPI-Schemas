@@ -31,29 +31,29 @@
       <xs:element minOccurs="0" maxOccurs="1" name="LastName" type="contactLastName" />
       <xs:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="emailAddress" />
       <xs:element minOccurs="0" maxOccurs="1" name="SkypeUserName" type="skypeUserName" />
-      <xs:element minOccurs="0" maxOccurs="1" name="ContactPersons" nillable="false" type="ArrayOfContactPerson" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContactPersons" type="ArrayOfContactPerson" />
       <xs:element minOccurs="0" maxOccurs="1" name="BankAccountDetails" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="TaxNumber" type="taxNumberType" />
       <xs:element minOccurs="0" maxOccurs="1" name="AccountsReceivableTaxType" type="taxType" />
       <xs:element minOccurs="0" maxOccurs="1" name="AccountsPayableTaxType" type="taxType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Addresses" type="ArrayOfAddress" />
       <xs:element minOccurs="0" maxOccurs="1" name="Phones" type="ArrayOfPhone" />
-      <xs:element minOccurs="0" maxOccurs="1" name="IsSupplier" nillable="false" type="xs:boolean" />
-      <xs:element minOccurs="0" maxOccurs="1" name="IsCustomer" nillable="false" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IsSupplier" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IsCustomer" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="DefaultCurrency" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="XeroNetworkKey" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="SalesDefaultAccountCode" type="accountCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="PurchasesDefaultAccountCode" type="accountCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="SalesTrackingCategories" type="contactTrackingCategories" />
       <xs:element minOccurs="0" maxOccurs="1" name="PurchasesTrackingCategories" type="contactTrackingCategories" />
-      <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC"  type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="ContactGroups" type="ArrayOfContactGroup" />
       <xs:element minOccurs="0" maxOccurs="1" name="Website" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="BrandingTheme" nillable="false" type="BrandingTheme" />
+      <xs:element minOccurs="0" maxOccurs="1" name="BrandingTheme" type="BrandingTheme" />
       <xs:element minOccurs="0" maxOccurs="1" name="BatchPayments" type="batchPayments" />
       <xs:element minOccurs="0" maxOccurs="1" name="Discount" type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="Balances" type="Balances" />
-      <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" nillable="false" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="HasAttachments" type="xs:boolean" />
     </xs:all>
     <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
   </xs:complexType>
@@ -82,8 +82,8 @@
 
   <xs:complexType name="Balances">
     <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable" nillable="true" type="AccountsReceivable" />
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" nillable="true" type="AccountsPayable" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsReceivable"  type="AccountsReceivable" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AccountsPayable" type="AccountsPayable" />
     </xs:sequence>
   </xs:complexType>
 

@@ -27,8 +27,8 @@
       <xs:element minOccurs="1" maxOccurs="1" name="CanApplyToExpenses" type="xs:boolean" />
       <xs:element minOccurs="1" maxOccurs="1" name="CanApplyToLiabilities" type="xs:boolean" />
       <xs:element minOccurs="1" maxOccurs="1" name="CanApplyToRevenue" type="xs:boolean" />
-      <xs:element minOccurs="1" maxOccurs="1" name="DisplayTaxRate" nillable="true" type="taxRate" />
-      <xs:element minOccurs="1" maxOccurs="1" name="EffectiveRate" nillable="true" type="taxRate" />
+      <xs:element minOccurs="1" maxOccurs="1" name="DisplayTaxRate"  type="taxRate" />
+      <xs:element minOccurs="1" maxOccurs="1" name="EffectiveRate" type="taxRate" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>

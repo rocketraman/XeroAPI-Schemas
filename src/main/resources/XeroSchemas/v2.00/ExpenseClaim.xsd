@@ -10,18 +10,14 @@
 
   <xs:element name="ExpenseClaims" type="ArrayOfExpenseClaim" />
 
-  <!-- 
-  ArrayOfExpenseClaim
-  -->
+  <!--   ArrayOfExpenseClaim  -->
   <xs:complexType name="ArrayOfExpenseClaim">
     <xs:sequence>
       <xs:element name="ExpenseClaim" minOccurs="0" maxOccurs="unbounded" type="ExpenseClaim" />
     </xs:sequence>
   </xs:complexType>
 
-  <!-- 
-  ExpenseClaim 
-  -->
+  <!--   ExpenseClaim  -->
   <xs:complexType name="ExpenseClaim">
     <xs:all>
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
