@@ -12,6 +12,7 @@
   <xs:include schemaLocation="Account.xsd" />
   <xs:include schemaLocation="Payment.xsd" />
   <xs:include schemaLocation="Contact.xsd" />
+  <xs:include schemaLocation="ContactGroup.xsd" />
   <xs:include schemaLocation="Tracking.xsd" />
   <xs:include schemaLocation="CurrencyCode.xsd" />
   <xs:include schemaLocation="Organisation.xsd" />
@@ -29,6 +30,8 @@
   <xs:include schemaLocation="Receipt.xsd" />
   <xs:include schemaLocation="ExpenseClaim.xsd" />
   <xs:include schemaLocation="RepeatingInvoice.xsd" />
+  <xs:include schemaLocation="Invoice.xsd" />
+  <xs:include schemaLocation="InvoiceReminder.xsd" />
   <xs:include schemaLocation="BankTransfer.xsd" />
   <xs:element name="Responses" type="Response" />
   
@@ -44,7 +47,9 @@
       <!-- Items -->
       <xs:element minOccurs="0" maxOccurs="1" name="TaxRates" type="ArrayOfTaxRate" />
       <xs:element minOccurs="0" maxOccurs="1" name="Invoices" type="ArrayOfInvoice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="InvoiceReminders" type="ArrayOfInvoiceReminder" />
       <xs:element minOccurs="0" maxOccurs="1" name="Contacts" type="ArrayOfContact" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ContactGroups" type="ArrayOfContactGroup" />
       <xs:element minOccurs="0" maxOccurs="1" name="Accounts" type="ArrayOfAccount" />
       <xs:element minOccurs="0" maxOccurs="1" name="TrackingCategories" type="ArrayOfTrackingCategory" />
       <xs:element minOccurs="0" maxOccurs="1" name="Organisations" type="ArrayOfOrganisation" />
