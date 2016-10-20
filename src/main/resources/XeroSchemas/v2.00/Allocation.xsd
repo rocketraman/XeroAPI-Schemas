@@ -21,6 +21,8 @@
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
+  <xs:element name="Allocations" nillable="true" type="ArrayOfAllocation" />
+
   <xs:complexType name="ArrayOfAllocation">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Allocation" nillable="true" type="Allocation" />
