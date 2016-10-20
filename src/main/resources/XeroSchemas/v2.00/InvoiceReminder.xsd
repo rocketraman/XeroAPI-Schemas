@@ -5,7 +5,14 @@
 
   <xs:include schemaLocation="BaseTypes.xsd" />
     
-  <xs:element name="InvoiceReminder" type="InvoiceReminder" />
+  <xs:element name="InvoiceReminders" type="ArrayOfInvoiceReminder" />
+
+  <!-- Branding Themes -->
+  <xs:complexType name="ArrayOfInvoiceReminder">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InvoiceReminder" nillable="true" type="InvoiceReminder" />
+    </xs:sequence>
+  </xs:complexType>
 
   <!-- Invoice Reminder -->
   <xs:complexType name="InvoiceReminder">
