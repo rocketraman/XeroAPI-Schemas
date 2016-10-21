@@ -80,6 +80,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Prepayments" type="ArrayOfPrepayment" />
       <xs:element minOccurs="0" maxOccurs="1" name="PurchaseOrders" type="ArrayOfPurchaseOrder" />
       <xs:element minOccurs="0" maxOccurs="1" name="Allocations" type="ArrayOfAllocation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Options" type="ArrayOfTrackingCategoryOption" />
     </xs:sequence>
   </xs:complexType>
   
