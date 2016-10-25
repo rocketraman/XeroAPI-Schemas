@@ -25,13 +25,13 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings"  type="ArrayOfWarning" />
       <xs:element minOccurs="0" maxOccurs="1" name="Type" type="creditNoteType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Contact" type="Contact" />
-      <xs:element minOccurs="1" maxOccurs="1" name="Date"  type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Date"  type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="invoiceStatus" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineAmountTypes"  type="lineAmountType" />
       <xs:element minOccurs="0" maxOccurs="1" name="LineItems" type="ArrayOfLineItem" />
       <xs:element minOccurs="0" maxOccurs="1" name="SubTotal"  type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="TotalTax" type="itemPrice" />
-      <xs:element minOccurs="1" maxOccurs="1" name="Total"  type="itemPrice" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Total"  type="itemPrice" />
       <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="FullyPaidOnDate"  type="xs:dateTime" />
