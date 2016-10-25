@@ -357,6 +357,15 @@
       <xs:enumeration value="DELETED"><xs:annotation><xs:documentation>Deleted</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
+
+  <!-- Tracking Category Status -->
+  <xs:simpleType name="trackingCategoryStatus">
+    <xs:annotation><xs:documentation>tracking Category Status</xs:documentation></xs:annotation>
+    <xs:restriction base="xs:token">
+      <xs:enumeration value="ACTIVE"><xs:annotation><xs:documentation>Active</xs:documentation></xs:annotation></xs:enumeration>
+      <xs:enumeration value="ARCHIVED"><xs:annotation><xs:documentation>Archived</xs:documentation></xs:annotation></xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
   
   <!-- Account Type -->
   <xs:simpleType name="accountType">
@@ -424,7 +433,6 @@
       <xs:enumeration value="ACTIVE"><xs:annotation><xs:documentation>Active</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="ARCHIVED"><xs:annotation><xs:documentation>Archived</xs:documentation></xs:annotation></xs:enumeration>
       <xs:enumeration value="DELETED"><xs:annotation><xs:documentation>Deleted</xs:documentation></xs:annotation></xs:enumeration>
-      <xs:enumeration value="PENDING"><xs:annotation><xs:documentation>Pending</xs:documentation></xs:annotation></xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
 
@@ -784,7 +792,7 @@
   <xs:simpleType name="bankTransactionStatus">
     <xs:restriction base="xs:token">
       <xs:enumeration value="AUTHORISED"/>
-      <xs:enumeration value="VOIDED"/>
+      <xs:enumeration value="DELETED"/>
     </xs:restriction>
   </xs:simpleType>
 

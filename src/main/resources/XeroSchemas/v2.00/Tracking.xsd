@@ -11,7 +11,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="0" maxOccurs="1" name="Warnings" type="ArrayOfWarning" />
       <xs:element minOccurs="1" maxOccurs="1" name="Name" type="trackingNameType" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Status" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Status" type="trackingCategoryStatus" />
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingCategoryID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingOptionID" type="uniqueIdentifier" />
       <xs:element minOccurs="0" maxOccurs="1" name="Options" type="ArrayOfTrackingCategoryOption" />
