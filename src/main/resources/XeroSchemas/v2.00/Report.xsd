@@ -4,6 +4,8 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
 >
   <xs:include schemaLocation="BaseTypes.xsd" />
+  
+  <xs:element name="Reports" type="ArrayOfReport" />
 
   <!-- Reports -->
   <xs:complexType name="ArrayOfReport">
