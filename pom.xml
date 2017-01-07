@@ -87,7 +87,7 @@
                         <!-- github repo name -->
                         <repositoryName>XeroAPI-Schemas</repositoryName>
                         <!-- github username -->
-                        <repositoryOwner>SidneyAllen</repositoryOwner>
+                        <repositoryOwner>XeroAPI</repositoryOwner>
                   </configuration>
                   <executions>
                       <execution>

@@ -17,7 +17,7 @@ You will also add this repository to your POM.xml
 
      <repository>
       <id>xero-accounting-api-schema-mvn-repo</id>
-	  <url>https://raw.github.com/SidneyAllen/XeroAPI-Schemas/mvn-repo/</url>
+	  <url>https://raw.github.com/XeroAPI/XeroAPI-Schemas/mvn-repo/</url>
 	  <snapshots>
 	    <enabled>true</enabled>
 	    <updatePolicy>always</updatePolicy>
