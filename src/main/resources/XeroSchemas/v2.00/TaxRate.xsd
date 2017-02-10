@@ -43,7 +43,7 @@
     <xs:all>
       <xs:element minOccurs="1" maxOccurs="1" name="Name" type="xs:string" />
       <xs:element minOccurs="1" maxOccurs="1" name="Rate" type="xs:string" />
-	  <xs:element minOccurs="1" maxOccurs="1" name="IsCompound" type="xs:boolean" />
+	    <xs:element minOccurs="1" maxOccurs="1" name="IsCompound" type="xs:boolean" />
      </xs:all>
   </xs:complexType>
 
