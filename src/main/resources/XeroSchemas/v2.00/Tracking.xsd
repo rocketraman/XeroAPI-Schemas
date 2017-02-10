@@ -38,4 +38,12 @@
     </xs:sequence>
   </xs:complexType>
   
+  <xs:element name="TrackingCategories" type="ArrayOfTrackingCategory" />
+  
+  <xs:complexType name="ArrayOfTrackingCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TrackingCategory" nillable="true" type="TrackingCategory" />
+    </xs:sequence>
+  </xs:complexType>
+  
 </xs:schema>
