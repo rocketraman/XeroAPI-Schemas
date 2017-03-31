@@ -277,6 +277,11 @@
           <xs:documentation>CAPE VERDE</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="CW"> 
+        <xs:annotation>
+          <xs:documentation>CURAÇAO</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="CX">
         <xs:annotation>
           <xs:documentation>CHRISTMAS ISLAND</xs:documentation>
