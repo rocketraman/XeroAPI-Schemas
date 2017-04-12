@@ -25,6 +25,7 @@
     <xs:all>
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingOptionID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="Name" type="trackingNameType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Status" type="trackingCategoryStatus" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
