@@ -38,6 +38,7 @@
   <xs:include schemaLocation="Prepayment.xsd" />
   <xs:include schemaLocation="PurchaseOrder.xsd" />
   <xs:include schemaLocation="Allocation.xsd" />
+  <xs:include schemaLocation="ApiException.xsd" />
 
   <xs:element name="Responses" type="Response" />
   
@@ -80,6 +81,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Prepayments" type="ArrayOfPrepayment" />
       <xs:element minOccurs="0" maxOccurs="1" name="PurchaseOrders" type="ArrayOfPurchaseOrder" />
       <xs:element minOccurs="0" maxOccurs="1" name="Allocations" type="ArrayOfAllocation" />
+      <xs:element minOccurs="0" maxOccurs="1" name="ApiException" type="Elements" />
       <xs:element minOccurs="0" maxOccurs="1" name="Options" type="ArrayOfTrackingCategoryOption" />
     </xs:sequence>
   </xs:complexType>
