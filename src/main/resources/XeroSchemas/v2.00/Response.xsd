@@ -31,6 +31,7 @@
   <xs:include schemaLocation="ExpenseClaim.xsd" />
   <xs:include schemaLocation="RepeatingInvoice.xsd" />
   <xs:include schemaLocation="Invoice.xsd" />
+  <xs:include schemaLocation="OnlineInvoice.xsd" />
   <xs:include schemaLocation="InvoiceReminder.xsd" />
   <xs:include schemaLocation="BankTransfer.xsd" />
   <xs:include schemaLocation="LinkedTransaction.xsd" />
@@ -55,6 +56,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="TaxRates" type="ArrayOfTaxRate" />
       <xs:element minOccurs="0" maxOccurs="1" name="Invoices" type="ArrayOfInvoice" />
       <xs:element minOccurs="0" maxOccurs="1" name="InvoiceReminders" type="ArrayOfInvoiceReminder" />
+      <xs:element minOccurs="0" maxOccurs="1" name="OnlineInvoices" type="ArrayOfOnlineInvoice" />
       <xs:element minOccurs="0" maxOccurs="1" name="Contacts" type="ArrayOfContact" />
       <xs:element minOccurs="0" maxOccurs="1" name="ContactGroups" type="ArrayOfContactGroup" />
       <xs:element minOccurs="0" maxOccurs="1" name="Accounts" type="ArrayOfAccount" />
