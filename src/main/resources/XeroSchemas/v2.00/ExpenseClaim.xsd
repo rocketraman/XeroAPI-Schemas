@@ -35,7 +35,7 @@
       <xs:element name="ReportingDate" minOccurs="0" maxOccurs="1" type="xs:dateTime" />
       <xs:element name="ReceiptID" minOccurs="0" maxOccurs="1" type="uniqueIdentifier" />
     </xs:all>
-    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>

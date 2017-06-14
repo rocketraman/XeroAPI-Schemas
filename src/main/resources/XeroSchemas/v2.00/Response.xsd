@@ -41,7 +41,7 @@
   <xs:include schemaLocation="Allocation.xsd" />
   <xs:include schemaLocation="ApiException.xsd" />
 
-  <xs:element name="Responses" type="Response" />
+  <xs:element name="Response" type="Response" />
   
   <xs:complexType name="Response">
     <xs:sequence>
