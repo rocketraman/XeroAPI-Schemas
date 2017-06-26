@@ -30,7 +30,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="ManualJournalID" type="uniqueIdentifier" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
 
   <!--  Manual Journal Lines  -->
@@ -51,7 +51,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="Tracking" type="TrackingCategory" />
       <xs:element minOccurs="0" maxOccurs="1" name="TaxAmount" type="itemPrice" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>

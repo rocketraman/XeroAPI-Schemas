@@ -40,7 +40,7 @@
       <xs:element name="Url" minOccurs="0" maxOccurs="1" type="xs:anyURI" />
       <xs:element name="Attachments" minOccurs="0" maxOccurs="1" type="ArrayOfAttachment" />
     </xs:all>
-    <xs:attribute name="validationstatus" type="entityValidationStatus" use="optional" />
+    <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
   
 </xs:schema>
