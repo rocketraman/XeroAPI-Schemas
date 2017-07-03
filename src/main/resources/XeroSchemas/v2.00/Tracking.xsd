@@ -23,6 +23,7 @@
 
   <xs:complexType name="TrackingCategoryOption">
     <xs:all>
+      <xs:element minOccurs="0" maxOccurs="1" name="ValidationErrors" type="ArrayOfValidationError" />
       <xs:element minOccurs="1" maxOccurs="1" name="TrackingOptionID" type="uniqueIdentifier" />
       <xs:element minOccurs="1" maxOccurs="1" name="Name" type="trackingNameType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="trackingCategoryStatus" />
