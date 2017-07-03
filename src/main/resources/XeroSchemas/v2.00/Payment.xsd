@@ -6,6 +6,7 @@
   <xs:include schemaLocation="BaseTypes.xsd" />
   <xs:include schemaLocation="Account.xsd" />
   <xs:include schemaLocation="Invoice.xsd" />
+  <xs:include schemaLocation="CreditNote.xsd" />
 
   <xs:element name="Payments" nillable="true" type="ArrayOfPayment" />
   <xs:element name="Payment" type="Payment" />
@@ -25,6 +26,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="PaymentType" type="paymentType" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="paymentStatus" />
       <xs:element minOccurs="0" maxOccurs="1" name="UpdatedDateUTC" type="xs:dateTime" />
+      <xs:element minOccurs="0" maxOccurs="1" name="CreditNote" type="CreditNote" />
     </xs:all>
     <xs:attribute name="status" type="entityValidationStatus" use="optional" />
   </xs:complexType>
