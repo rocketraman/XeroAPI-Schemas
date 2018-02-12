@@ -39,7 +39,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="SentToContact" type="xs:boolean" />
       <xs:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="AttentionTo" type="xs:string" />
-      <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="ArrayOfPhone" />
+      <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="DeliveryInstructions" type="deliveryInstructionsType" />
       <xs:element minOccurs="0" maxOccurs="1" name="ExpectedArrivalDate" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="PurchaseOrderID" type="uniqueIdentifier" />
