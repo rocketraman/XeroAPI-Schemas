@@ -10,7 +10,7 @@ Add this dependency to your POM.xml
     <dependency>
 	  <groupId>com.xero</groupId>
 	  <artifactId>xero-accounting-api-schema</artifactId>
-	  <version>0.0.7</version>
+	  <version>0.1.0</version>
 	</dependency>
 
 You will also add this repository to your POM.xml

@@ -11,7 +11,6 @@
   <xs:include schemaLocation="LineItem.xsd" />
   <xs:include schemaLocation="Payment.xsd" />
   <xs:include schemaLocation="CreditNote.xsd" />  
-  <xs:include schemaLocation="Address.xsd" />
 
   <xs:element name="PurchaseOrders" nillable="true" type="ArrayOfPurchaseOrder" />
 
@@ -38,7 +37,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="CurrencyCode" type="currencyCode" />
       <xs:element minOccurs="0" maxOccurs="1" name="Status" type="purchaseOrderStatus" />
       <xs:element minOccurs="0" maxOccurs="1" name="SentToContact" type="xs:boolean" />
-      <xs:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="ArrayOfAddress" />
+      <xs:element minOccurs="0" maxOccurs="1" name="DeliveryAddress" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="AttentionTo" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="Telephone" type="ArrayOfPhone" />
       <xs:element minOccurs="0" maxOccurs="1" name="DeliveryInstructions" type="deliveryInstructionsType" />
